@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+:root{
+    --border-color : blue;
+    --background-color : rgb(196, 218, 233);
+
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/24/13/brick-wall-room-background-neon-light-vector-27852413.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-size: 'Lato',italic;
+    color: white;
+   
+}
+.draggable_list{
+    border: 2px solid var(--border-color) ;
+    color: rgb(52, 9, 243);
+    padding: 0;
+    list-style-type: none;
+
+}
+.draggable_list li{
+    background: rgb(219, 238, 241);
+    display: flex;
+    flex: 1;
+}
+.draggable_list li:not(:last-of-type){
+    border-bottom: 1px solid rgb(4, 109, 245);
+}
+.draggable_list .number{
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    height: 60px;
+    width: 60px;
+
+}
+.draggable_list li.over .dragNameList{
+    background-color: aliceblue;
+}
+.draggable_list .person-name{
+    margin: 0 40px 0 0;
+}
+
+
+
+.dragNameList{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    flex: 1;
+    
+
+}
+
